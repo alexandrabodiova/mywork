@@ -6,7 +6,7 @@ welcome to my page!
 
 ## My Bachelor
 
-![Alt text](pictures/bachelor_alex.jpg)
+![Alt text](../pictures/bachelor_alex.jpg)
 
 🏗️ STRUCTURAL EXCELLENCE 🏗️
      /\   /\   /\   /\
