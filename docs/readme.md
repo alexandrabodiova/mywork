@@ -6,7 +6,7 @@ welcome to my page!
 
 ## My Bachelor
 
-![Alt text](../pictures/bachelor_alex.jpg)
+![bachelor_alex](https://github.com/user-attachments/assets/97b36fb4-013a-4a8f-8152-36b532fe80b9)
 
 🏗️ STRUCTURAL EXCELLENCE 🏗️
      /\   /\   /\   /\
