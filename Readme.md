@@ -18,13 +18,13 @@ Welcome to my civil engineering portfolio.
 ![Administrative building](pictures/Administrative_building.jpg)
 
 ### Apartment building
-![Apartment building](pictures/Apartment building1.jpg)
-![Apartment building](pictures/Apartment building2.jpg)
-![Apartment building](pictures/Apartment building3.jpg)
+![Apartment building](pictures/Apartment_building1.jpg)
+![Apartment building](pictures/Apartment_building2.jpg)
+![Apartment building](pictures/Apartment_building3.jpg)
 
 ### Sports hall
-![Sports hall](pictures/Sports hall1.jpg)
-![Sports hall](pictures/Sports hall2.jpg)
+![Sports hall](pictures/Sports_hall1.jpg)
+![Sports hall](pictures/Sports_hall2.jpg)
 
 ## Contact
 - Email: bodiova.alexandra@gmail.com
