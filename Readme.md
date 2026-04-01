@@ -15,7 +15,7 @@ Welcome to my civil engineering portfolio.
 ![Bachelor](pictures/Bachelor.jpg)
 
 ### Administrative building
-![Administrative building](pictures/Administrative building.jpg)
+![Administrative building](pictures/Administrative_building.jpg)
 
 ### Apartment building
 ![Apartment building](pictures/Apartment building1.jpg)
