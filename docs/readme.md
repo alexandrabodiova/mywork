@@ -6,10 +6,10 @@ Welcome to my civil engineering portfolio.
 ## Projects
 
 ### Master
-![Master](pictures/Master1.jpg)
-![Master](pictures/Master2.jpg)
-![Master](pictures/Master3.jpg)
-![Master](pictures/Master4.jpg)
+![Master](..pictures/Master1.jpg)
+![Master](..pictures/Master2.jpg)
+![Master](..pictures/Master3.jpg)
+![Master](..pictures/Master4.jpg)
 
 ### Bachelor
 ![Bachelor](pictures/Bachelor.jpg)
