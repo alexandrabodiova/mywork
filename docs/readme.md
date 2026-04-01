@@ -27,6 +27,6 @@ Welcome to my civil engineering portfolio.
 ![Sports hall](pictures/Sports hall2.jpg)
 
 ## Contact
-- Email: your.email@example.com
+- Email: bodiova.alexandra@gmail.com
 
 
