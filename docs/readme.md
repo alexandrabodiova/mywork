@@ -12,19 +12,19 @@ Welcome to my civil engineering portfolio.
 ![Master](pictures/Master4.jpg)
 
 ### Bachelor
-![Bachelor](images/Bachelor.jpg)
+![Bachelor](pictures/Bachelor.jpg)
 
 ### Administrative building
-![Administrative building](images/Administrative building.jpg)
+![Administrative building](pictures/Administrative building.jpg)
 
 ### Apartment building
-![Apartment building](images/Apartment building1.jpg)
-![Apartment building](images/Apartment building2.jpg)
-![Apartment building](images/Apartment building3.jpg)
+![Apartment building](pictures/Apartment building1.jpg)
+![Apartment building](pictures/Apartment building2.jpg)
+![Apartment building](pictures/Apartment building3.jpg)
 
 ### Sports hall
-![Sports hall](images/Sports hall1.jpg)
-![Sports hall](images/Sports hall2.jpg)
+![Sports hall](pictures/Sports hall1.jpg)
+![Sports hall](pictures/Sports hall2.jpg)
 
 ## Contact
 - Email: your.email@example.com
