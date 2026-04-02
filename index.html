@@ -8,91 +8,98 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f6f8;
       color: #333;
+      background: url('https://www.transparenttextures.com/patterns/architectural.png');
+      background-color: #f4f6f8;
     }
+
     header {
       background: #1f3a5f;
       color: white;
       padding: 40px 20px;
       text-align: center;
     }
+
     nav {
       background: #16324a;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
+
     .card {
       background: white;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 10px;
-    }
-    .img-container {
-      position: relative;
-      margin-bottom: 10px;
+      padding: 20px;
       cursor: pointer;
+      text-align: center;
+      transition: transform 0.2s;
     }
-    .img-container img {
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
       width: 100%;
       height: 180px;
       object-fit: cover;
       border-radius: 5px;
     }
-    .img-text {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.6);
-      color: white;
-      padding: 5px;
-      font-size: 14px;
-      text-align: center;
-    }
 
-    /* MODAL (image popup) */
-    .modal {
+    .gallery-modal {
       display: none;
       position: fixed;
       z-index: 1000;
-      padding-top: 50px;
-      left: 0;
       top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0,0,0,0.9);
-      text-align: center;
+      background: rgba(0,0,0,0.95);
+      overflow: auto;
+      padding: 40px;
     }
-    .modal img {
-      max-width: 90%;
-      max-height: 80%;
+
+    .gallery-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
     }
+
+    .gallery-content img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
     .close {
-      position: absolute;
+      position: fixed;
       top: 20px;
       right: 40px;
       color: white;
       font-size: 40px;
       cursor: pointer;
     }
+
     footer {
       background: #1f3a5f;
       color: white;
@@ -116,61 +123,36 @@
 
 <section id="about">
   <h2>About Me</h2>
-  <p>
-    Welcome to my civil engineering portfolio.
-  </p>
+  <p>Welcome to my civil engineering portfolio.</p>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
   <div class="projects">
 
-    <div class="card">
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Master1.jpg"><div class="img-text">Project text</div>
-      </div>
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Master2.jpg"><div class="img-text">Project text</div>
-      </div>
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Master3.jpg"><div class="img-text">Project text</div>
-      </div>
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Master4.jpg"><div class="img-text">Project text</div>
-      </div>
+    <div class="card" onclick="openGallery('master')">
+      <img src="pictures/Master1.jpg">
+      <h3>Master Thesis</h3>
     </div>
 
-    <div class="card">
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Bachelor.jpg"><div class="img-text">Project text</div>
-      </div>
+    <div class="card" onclick="openGallery('bachelor')">
+      <img src="pictures/Bachelor.jpg">
+      <h3>Bachelor Project</h3>
     </div>
 
-    <div class="card">
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Administrative_building.jpg"><div class="img-text">Project text</div>
-      </div>
+    <div class="card" onclick="openGallery('admin')">
+      <img src="pictures/Administrative_building.jpg">
+      <h3>Administrative Building</h3>
     </div>
 
-    <div class="card">
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Apartment_building1.jpg"><div class="img-text">Project text</div>
-      </div>
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Apartment_building2.jpg"><div class="img-text">Project text</div>
-      </div>
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Apartment_building3.jpg"><div class="img-text">Project text</div>
-      </div>
+    <div class="card" onclick="openGallery('apartment')">
+      <img src="pictures/Apartment_building1.jpg">
+      <h3>Apartment Building</h3>
     </div>
 
-    <div class="card">
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Sports_hall1.jpg"><div class="img-text">Project text</div>
-      </div>
-      <div class="img-container" onclick="openModal(this)">
-        <img src="pictures/Sports_hall2.jpg"><div class="img-text">Project text</div>
-      </div>
+    <div class="card" onclick="openGallery('sports')">
+      <img src="pictures/Sports_hall1.jpg">
+      <h3>Sports Hall</h3>
     </div>
 
   </div>
@@ -186,22 +168,53 @@
   <p>© 2026 Alexandra Bodiova | Civil Engineering</p>
 </footer>
 
-<!-- MODAL -->
-<div id="myModal" class="modal" onclick="closeModal()">
-  <span class="close">&times;</span>
-  <img id="modalImg">
+<!-- GALLERY MODAL -->
+<div id="galleryModal" class="gallery-modal">
+  <span class="close" onclick="closeGallery()">&times;</span>
+  <div class="gallery-content" id="galleryContent"></div>
 </div>
 
 <script>
-function openModal(element) {
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("modalImg");
+const galleries = {
+  master: [
+    "pictures/Master1.jpg",
+    "pictures/Master2.jpg",
+    "pictures/Master3.jpg",
+    "pictures/Master4.jpg"
+  ],
+  bachelor: [
+    "pictures/Bachelor.jpg"
+  ],
+  admin: [
+    "pictures/Administrative_building.jpg"
+  ],
+  apartment: [
+    "pictures/Apartment_building1.jpg",
+    "pictures/Apartment_building2.jpg",
+    "pictures/Apartment_building3.jpg"
+  ],
+  sports: [
+    "pictures/Sports_hall1.jpg",
+    "pictures/Sports_hall2.jpg"
+  ]
+};
+
+function openGallery(name) {
+  const modal = document.getElementById("galleryModal");
+  const content = document.getElementById("galleryContent");
+  content.innerHTML = "";
+
+  galleries[name].forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    content.appendChild(img);
+  });
+
   modal.style.display = "block";
-  modalImg.src = element.querySelector("img").src;
 }
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+function closeGallery() {
+  document.getElementById("galleryModal").style.display = "none";
 }
 </script>
 
