@@ -1,7 +1,7 @@
 # Civil Engineering Portfolio
 
 ## About Me
-Welcome to my civil engineering portfolio.
+I’m a civil engineer who enjoys designing structures and seeing ideas turn into real, tangible projects. What I like most about this field is the balance between creativity and technical thinking. It’s really rewarding to work on something that’s not only functional but also has a lasting impact on people’s everyday lives. Being part of that process is what makes this work so fulfilling for me.
 
 ## Projects
 
